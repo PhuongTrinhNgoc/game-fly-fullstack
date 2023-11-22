@@ -26,7 +26,7 @@ const gamesController = {
   getGames: async (req, res) => {
     try {
       const pool = require("../db");
-
+      console.log('aa');
       // Truy vấn danh sách trò chơi và thông tin về tác giả của mỗi trò chơi
       const query = `
             SELECT games.id AS game_id, games.name AS game_name, games.published_date, games.genres, games.status,

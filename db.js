@@ -4,9 +4,9 @@ const dotenv = require('dotenv');
 dotenv.config();
 const pool = new Pool({
     user: 'postgres',
-    host: process.env.HOST,
-    port: process.env.DBPORT,
-    password: process.env.PASSWORD,
+    host: 'db.mxiooupkzjtnbtnijazx.supabase.co',
+    port: "5432",
+    password: "Phuongxu0398!",
     database: "postgres"
 });
 module.exports = pool
